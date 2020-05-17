@@ -2,14 +2,20 @@
 
 
 ## Concept
+
 <p align="center">
   <img src="dino_PH.png"> 
 </p>
+
+
 AR pet companion. 
-​
-​
+
+
+
 ## Scope
-​
+
+
+
 ### Functional Requirements
 ​
 - The operator **receives** a new shipment order.
