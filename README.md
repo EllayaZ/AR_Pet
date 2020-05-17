@@ -1,13 +1,9 @@
 # AR Pet App
-
-
-## Concept
-
 <p align="center">
   <img src="dino_PH.png"> 
 </p>
 
-
+## Concept
 AR Pet app for Android will provide users with a fun and interactive experince of placing an AR charcaterof their choice on top of the selected surfaces. The character is animated and can be rotated and reposition as well as its color and size. The app is simple and design to relax its user in the moment of stress. Pop up your AR pet companion on your screen wherever you are and have fun!
 
 
@@ -20,7 +16,6 @@ When user is satisfied with the location of a Magic Placemnet Ring, he/she can t
 
 
 ### Development Tools and System Requirements for Android device
-​
 - Unity Engine
 - AR Foundation 
 - AR Core XR Plugin
@@ -29,7 +24,6 @@ When user is satisfied with the location of a Magic Placemnet Ring, he/she can t
 
 
 ### Tasks
-​
 - Prepare the concept of the app and MVP
 - Set up Android Device in Development Model
 - Download/Add modules to the Unity version (Android SDK, NDK, Open JDK)
@@ -45,7 +39,6 @@ When user is satisfied with the location of a Magic Placemnet Ring, he/she can t
 ​
 ​
 ### DeveloperExperience
-​
 As a technical artist and music/sound producer my experience is mainly concentrated in development of a level and sound designs for VR, AR application. I have experience in modeling, texturing, rigging and animating assets as well as creating a storyboarding and full level design for the experience. 
 
 - Aibo Factory VR.
