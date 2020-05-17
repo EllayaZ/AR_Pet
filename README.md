@@ -11,16 +11,12 @@
 AR Pet app for Android will provide users with a fun and interactive experince of placing an AR charcaterof their choice on top of the selected surfaces. The character is animated and can be rotated and reposition as well as its color and size. The app is simple and design to relax its user in the moment of stress. Pop up your AR pet companion on your screen wherever you are and have fun!
 
 
-
 ## Proof of concept
 Once the app is runing the user is able to see a Magic Placement Ring on the device screen. Magic PLacment Rings detects horizontal surfaces and surves as a placemnet indicator for AR Pet 3D Model.  
 <p align="center">
-  <img src="dino_PH.png"> 
+  <img src="Magic_Circle.jpg"> 
 </p>
 When user is satisfied with the location of a Magic Placemnet Ring, he/she can tap on it and Animated AR Pet will appear at the centre of the placemnet indicator. 
-<p align="center">
-  <img src="dino_PH.png"> 
-</p>
 
 
 ### Development Tools and System Requirements for Android device
@@ -30,7 +26,6 @@ When user is satisfied with the location of a Magic Placemnet Ring, he/she can t
 - AR Core XR Plugin
 - Android phone (See spesification below)
 - (Minimum API Level: Android 7/API Level 24)
-
 
 
 ### Tasks
@@ -48,7 +43,6 @@ When user is satisfied with the location of a Magic Placemnet Ring, he/she can t
 	- organize the Project browser (Assets)
 - Start building the project according to MVP delivarables
 ​
-	
 ​
 ### DeveloperExperience
 ​
