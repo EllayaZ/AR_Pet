@@ -8,144 +8,59 @@
 </p>
 
 
-AR pet companion. 
+AR Pet app for Android will provide users with a fun and interactive experince of placing an AR charcaterof their choice on top of the selected surfaces. The character is animated and can be rotated and reposition as well as its color and size. The app is simple and design to relax its user in the moment of stress. Pop up your AR pet companion on your screen wherever you are and have fun!
 
 
 
-## Scope
+## Proof of concept
+Once the app is runing the user is able to see a Magic Placement Ring on the device screen. Magic PLacment Rings detects horizontal surfaces and surves as a placemnet indicator for AR Pet 3D Model.  
+<p align="center">
+  <img src="dino_PH.png"> 
+</p>
+When user is satisfied with teh location of a Magic Placemnet Ring, he/she can tap on it and Animated AR Pet will appear at the centre of the placemnet indicator. 
+<p align="center">
+  <img src="dino_PH.png"> 
+</p>
+
+
+### Development Tools and System Requirements for Android device
+​
+- Unity Engine
+- AR Foundation 
+- AR Core XR Plugin
+- Android phone (See spesification below)
+- (Minimum API Level: Android 7/API Level 24)
 
 
 
-### Functional Requirements
-​
-- The operator **receives** a new shipment order.
-- Operator **starts** the drone program.
-- Program has a short tutorial to **understand** the control of the drone.
-- Operator **locates** the pickup destination.
-- Controls must **simulate** actual drone movement and control.
-- The simulation **highlight** the position of the package.
-- Operator **picks up** package.
-- Operator **locates** the drop off destination.
-- The simulation **shows** current time and delivery time.
-- The customer **recieves** a notification that the delivery is close.
-- The customer **moves** towards a specific location to recieve the package.
-- Operator **drops off** the package.
-- The operator **confirms** delivery.
-- Operator **returns** the drone to central office.
-​
-### User Experience
-​
-Once the operator enters the simulation in VR, she/he will be in a room similar to the one physically found in real life.  A computer where notifications, deliveries, and emails can be received is in front of the user. Within the work area there are different interactable objects with the objective of creating an immersive and entertaining environment.
-​
-The operator receives a notification about a new available delivery, accepts it and begins the flight simulation.
-​
-The drone is activated and the interface instructs the operator on how to take off and subsequently test the drone's movement, a process that will serve to train the operator and at the same time verify that the drone works properly.
-​
-Once the process aboved explained is complete, a mini map will be added in the interface to guide the operator to the pick up destination. The current time as well as the delivery time will be added to the interface for the operator to calculate the flight time.
-​
-One package can be delivered at once. The user is free to navigate wherever he/she wants but the fastest he/she gets to the delivery destination the better the score, which they can’t see until the simulation is over.  
-​
-When the operator gets close enough to the drop off location, the level changes so he can control the client that is waiting for the package for him to understand completely the process of delivery. The client should receive a notification saying the delivery is close and needs to approach to a pick up location without being so close, or the drone won’t drop the delivery.
-​
-Once the delivery is finished, the operator has to confirm it. If he/she does the confirmation before the client pick ups the package, the score will drop.
-​
-After confirmation the operator will return to the main office to recharge the drone and wait for the next job.
-​
 ### Tasks
 ​
+- Prepare the concept of the app and MVP
+- Set up Android Device in Development Model
+- Download/Add modules to the Unity version (Android SDK, NDK, Open JDK)
+- Set up Ar project in GitHub, Name it, Clone repo, Start Project in Unity
+- Download Package Mangers: AR Foundation, ARCore XR Plugin, ARKit XR Plugin (IOS)
+- Set up Porject Settings, plug in the Android Device, Build and Run
 - Import and optimize the 3D models.
 ​
-	- Street buildings, warehouse bay, residential house, drone Content Prep
+	- animal pet
 ​
-	- Organize the Content browser. Content Prep
+	- organize the Project browser (Assets)
+- Start building the project according to MVP delivarables
 ​
-	- Review the 3D models before importing into UE. Content Prep
-​
-	- Optimize any high-poly mesh. Content Prep
-​
-- Create interior office
-​
-	- Build interior design.
 	
-	- Add static mesh models.
-	
-	- Add pick up BPs.
-	
-	- Lights.
 ​
-- Create a street block.
+### DeveloperExperience
 ​
-	- Create level style
-​
-	- Add static mesh models to the level to recreate a street block. style
-​
-	- Add lighting for the street. style
-	
-- Create drone.
-	
-	- Add drone mesh to VR Pawn BP.
-​
-	- Add collision to the drone.
-	
-	
-- Creating the contact site between the drone and the delivery.
-​
-	- Add collision to the drone for overlap events
-​
-	- Drone communicate with the delivery pawn through level BP, Dispatch, or state machine for the delivery animation BP.
-​
-​
-- Program the HUD for the pilot of the drone.
-​
-	- Get score from GameMode or GameScore. 
-​
-	- Count down for the delivery time.
-​
-	- Track the altitude and latitude (Yaw offset). Use a holo-drone to visually track drone orientation.
-​
-	- Add minimap widget.
-	
-	- Add current time 
-​
-	- Develop BP for the mini map. 
-​
-	- Add battery life graphic to the HUD. Content Prep
-​
-	- Battery life.
-​
-	- Add package info to the HUD. 
-​
-- Drone Interaction
-​
-	- Add pickup and drop-off input.
-	
-	- Develop BP for auto pickup and drop-off events. 
-​
-	- Add motion controller inputs to the vr pawn. All the drone controls are on the sticks.
-​
-	- Add rotation and movement for the controllers
-​
-	- Add haptics for collision
-​
-	- Thumbstick for direction control.
-​
-	- Add grip to drop or pickup event.
-​
-- Score Management
-​
-	- Make an Enum list of tasks to complete.
-​
-	- Print the enum list for the player.
-​
-	- Add switch by Enum to go to next task.
-​
-	- Add a TimeNode to track time per task.
-​
-	- Add widget to print scores. style
-​
-- Sound.
-​
-	- Flying FX.
-	
+As a technical artist and music/sound producer my experience is mainly concentrated in development of a level and sound designs for VR, AR application. I have experience in modeling, texturing, rigging and animating assets as well as creating a storyboarding and full level design for the experience. 
+
+- Aibo Factory VR.
+A virtual reality guided tutorial on how to assemble an iconic japanese robot dog called Aibo: first person game. 
+
+
+- Checkers on the Console. 
+An algorithm code design (C#)  for playing console based checkers board games.
+
+
 
 		
