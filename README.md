@@ -17,7 +17,7 @@ Once the app is runing the user is able to see a Magic Placement Ring on the dev
 <p align="center">
   <img src="dino_PH.png"> 
 </p>
-When user is satisfied with teh location of a Magic Placemnet Ring, he/she can tap on it and Animated AR Pet will appear at the centre of the placemnet indicator. 
+When user is satisfied with the location of a Magic Placemnet Ring, he/she can tap on it and Animated AR Pet will appear at the centre of the placemnet indicator. 
 <p align="center">
   <img src="dino_PH.png"> 
 </p>
