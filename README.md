@@ -3,7 +3,7 @@
 
 ## Concept
 <p align="center">
-  <img src=""> 
+  <img src="dino_PH.png"> 
 </p>
 AR pet companion. 
 ​
