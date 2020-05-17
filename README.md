@@ -7,7 +7,6 @@
 </p>
 AR pet companion. 
 ​
-A manager will review the scores of the staff after completing the VR training course and will decide if the trainee is capable of operating the drones to real deliveries.
 ​
 ## Scope
 ​
