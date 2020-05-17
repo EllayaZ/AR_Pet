@@ -21,6 +21,7 @@ public class ObjectSpawner : MonoBehaviour
         {
             GameObject obj = Instantiate(objectToSpawn, placement_Indicator.transform.position, placement_Indicator.transform.rotation);
 
+
         }
     }
 }
