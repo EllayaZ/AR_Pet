@@ -19,7 +19,7 @@ public class Pet_Placer : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
-        selectionUI.SetActive(false);
+        //selectionUI.SetActive(false);
     }
 
     public void PlacePet(GameObject prefab)
