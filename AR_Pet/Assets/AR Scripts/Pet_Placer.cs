@@ -48,6 +48,31 @@ public class Pet_Placer : MonoBehaviour
             else
                 Deselect();
         }
+        if (curSelected != null && Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Moved)
+            MoveSelected();
+
+    }
+
+    void MoveSelected()
+    {
+        Vector3 curPos = cam.ScreenToViewportPoint(Input.touches[0].position);
+        Vector3 lastPos = cam.ScreenToViewportPoint(Input.touches[0].position - Input.touches[0].deltaPosition);
+
+        Vector3 touchDir = curPos - lastPos;
+
+        //object needs to be moved horizontaly on X, Z axes. Conversion needs to be applied; Camera needs to be adjusted;
+
+        Vector3 camRight = cam.transform.right;
+        camRight.y = 0;
+        //Normalize function take Vector3 and all inputs anbd normalize it to 1
+        camRight.Normalize();
+
+        Vector3 camForward = cam.transform.forward;
+        camForward.y = 0;
+        camForward.Normalize();
+
+        //moving selected object relatively to the direction we facing the camera
+        curSelected.transform.position += (camRight * touchDir.x + camForward * touchDir.y);
 
     }
 
@@ -83,8 +108,38 @@ public class Pet_Placer : MonoBehaviour
         pets.Add(obj);
 
         Select(obj);
+    }
+
+    public void ScaleSelected(float rate)
+    {
+        //scale in size selected object
+        curSelected.transform.localScale += Vector3.one * rate;
+    }
+
+    public void RotateSelected(float rate)
+    {
+        //rotate selected object
+        curSelected.transform.eulerAngles += Vector3.up * rate;
+    }
+
+    public void SetColor (Image buttonImage)
+    {
+        MeshRenderer[] meshRenderers = curSelected.GetComponentsInChildren<MeshRenderer>();
+
+        foreach (MeshRenderer mr in meshRenderers)
+        {
+            mr.material.color = buttonImage.color;
+        }
 
     }
 
-  
+    public void DeleteSelected()
+    {
+        pets.Remove(curSelected);
+        Destroy(curSelected);
+        Deselect();
+
+    }
+
+
 }
