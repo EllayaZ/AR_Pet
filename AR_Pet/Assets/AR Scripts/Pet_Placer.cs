@@ -122,6 +122,7 @@ public class Pet_Placer : MonoBehaviour
         curSelected.transform.eulerAngles += Vector3.up * rate;
     }
 
+    //MUST CHANGE THE SCRIPT!!!!
     public void SetColor (Image buttonImage)
     {
         MeshRenderer[] meshRenderers = curSelected.GetComponentsInChildren<MeshRenderer>();
