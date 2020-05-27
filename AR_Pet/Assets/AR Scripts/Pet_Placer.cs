@@ -123,14 +123,17 @@ public class Pet_Placer : MonoBehaviour
     }
 
     //MUST CHANGE THE SCRIPT!!!!
-    public void SetColor (Image buttonImage)
+    public void SetColor (Texture newTexture)
     {
-        MeshRenderer[] meshRenderers = curSelected.GetComponentsInChildren<MeshRenderer>();
+        curSelected.GetComponentInChildren<Renderer>().material.mainTexture = newTexture;
+        /*
+        SkinnedMeshRenderer[] meshRenderers = curSelected.GetComponentsInChildren<SkinnedMeshRenderer>();
 
-        foreach (MeshRenderer mr in meshRenderers)
+        foreach (SkinnedMeshRenderer mr in meshRenderers)
         {
             mr.material.color = buttonImage.color;
         }
+        */
 
     }
 
