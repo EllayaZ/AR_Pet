@@ -26,7 +26,7 @@ public class Pet_Placer : MonoBehaviour
     void Update()
     {
         //check if we touching UI element or if we not touching we continue with "If" statment
-        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began && !EventSystem.current.IsPointerOverGameObject(Input.touches[0].fingerId))
+        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
             //whereever we touch on teh screen
             Ray ray = cam.ScreenPointToRay(Input.touches[0].position);
@@ -38,15 +38,17 @@ public class Pet_Placer : MonoBehaviour
                 if (hit.collider.gameObject != null && pets.Contains(hit.collider.gameObject))
                 {
                     //if we touching the same object or a different one
-                    if (curSelected != null && hit.collider.gameObject != curSelected)
+                    if (hit.collider.gameObject == curSelected)
+                        Animate();
+                    else if (curSelected != null)
                         Select(hit.collider.gameObject);
                     else if (curSelected == null)
                         Select(hit.collider.gameObject);
 
                 }
             }
-            else
-                Deselect();
+            //else
+            //    Deselect();
         }
         if (curSelected != null && Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Moved)
             MoveSelected();
@@ -78,19 +80,26 @@ public class Pet_Placer : MonoBehaviour
 
     void Select(GameObject selected)
     {
-        if (curSelected != null)
-            ToggleSelectionVisual(curSelected, false);
+        //if (curSelected != null)
+        //    ToggleSelectionVisual(curSelected, false);
 
         curSelected = selected;
-        ToggleSelectionVisual(curSelected, true);
-        selectionUI.SetActive(true);
+        //ToggleSelectionVisual(curSelected, true);
+        //selectionUI.SetActive(true);
+
+    }
+
+    void Animate()
+    {
+        curSelected.GetComponent<Animator>().SetBool("InTrick_Kick", true);
+
 
     }
 
     void Deselect()
     {
-        if (curSelected != null)
-            ToggleSelectionVisual(curSelected, false);
+        //if (curSelected != null)
+        //    ToggleSelectionVisual(curSelected, false);
 
         curSelected = null;
         //selectionUI.SetActive(false);
@@ -123,7 +132,7 @@ public class Pet_Placer : MonoBehaviour
     }
 
     //Change texture in teh dragon by clicking buttons 
-    public void SetColor (Texture newTexture)
+    public void SetColor(Texture newTexture)
     {
         curSelected.GetComponentInChildren<Renderer>().material.mainTexture = newTexture;
         /*
