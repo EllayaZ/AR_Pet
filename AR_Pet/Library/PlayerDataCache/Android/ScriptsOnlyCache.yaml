@@ -25,8 +25,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -44,7 +46,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/AR_PET/AR_PET.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -83,56 +85,54 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 109
       Script: {instanceID: 0}
-    - Class: 111
-      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11200}
+      Script: {instanceID: 11194}
     - Class: 114
-      Script: {instanceID: 11394}
+      Script: {instanceID: 11388}
     - Class: 114
-      Script: {instanceID: 11440}
+      Script: {instanceID: 11434}
     - Class: 114
-      Script: {instanceID: 11480}
+      Script: {instanceID: 11474}
     - Class: 114
-      Script: {instanceID: 11636}
+      Script: {instanceID: 11630}
     - Class: 114
-      Script: {instanceID: 11668}
+      Script: {instanceID: 11662}
     - Class: 114
-      Script: {instanceID: 11844}
+      Script: {instanceID: 11838}
     - Class: 114
-      Script: {instanceID: 11934}
+      Script: {instanceID: 11928}
     - Class: 114
-      Script: {instanceID: 11972}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 12066}
+      Script: {instanceID: 12060}
     - Class: 114
-      Script: {instanceID: 12446}
+      Script: {instanceID: 12440}
     - Class: 114
-      Script: {instanceID: 12708}
+      Script: {instanceID: 12702}
     - Class: 114
-      Script: {instanceID: 12718}
+      Script: {instanceID: 12712}
     - Class: 114
-      Script: {instanceID: 12722}
+      Script: {instanceID: 12716}
     - Class: 114
-      Script: {instanceID: 12738}
+      Script: {instanceID: 12732}
     - Class: 114
-      Script: {instanceID: 12914}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 12968}
+      Script: {instanceID: 12962}
     - Class: 114
-      Script: {instanceID: 13040}
+      Script: {instanceID: 13034}
     - Class: 114
-      Script: {instanceID: 13068}
+      Script: {instanceID: 13062}
     - Class: 114
-      Script: {instanceID: 13230}
+      Script: {instanceID: 13224}
     - Class: 114
-      Script: {instanceID: 13246}
+      Script: {instanceID: 13240}
     - Class: 114
-      Script: {instanceID: 13388}
+      Script: {instanceID: 13382}
     - Class: 114
-      Script: {instanceID: 13462}
+      Script: {instanceID: 13456}
     - Class: 114
-      Script: {instanceID: 13498}
+      Script: {instanceID: 13492}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -810,5 +810,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/AR_PET/AR_PET.unity
   playerPath: C:/Users/Student/Documents/GitHub/AR_Pet/AR_Pet/Builds/AR_Pet_Android.sln.apk

@@ -64,7 +64,7 @@ public class Pet_Placer : MonoBehaviour
 
         Vector3 camRight = cam.transform.right;
         camRight.y = 0;
-        //Normalize function take Vector3 and all inputs anbd normalize it to 1
+        //Normalize function take Vector3 and all inputs and normalize it to 1
         camRight.Normalize();
 
         Vector3 camForward = cam.transform.forward;
@@ -122,7 +122,7 @@ public class Pet_Placer : MonoBehaviour
         curSelected.transform.eulerAngles += Vector3.up * rate;
     }
 
-    //MUST CHANGE THE SCRIPT!!!!
+    //Change texture in teh dragon by clicking buttons 
     public void SetColor (Texture newTexture)
     {
         curSelected.GetComponentInChildren<Renderer>().material.mainTexture = newTexture;
